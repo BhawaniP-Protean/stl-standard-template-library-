@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+pair<int, string>p; // pair is the class in stl which store the two data types or container, here p is the variable
+p={10,"bhawani"}; //we can also write p=make_pair(10,"bhawani");
+cout<<p.first<<" "<<p.second<<endl;  // in pair we use .first to get the first value or .second to get the second value
+
+
+// now i am taking the array to do pair operation 
+
+int a[]={1,2,3};
+int b[]={2,3,4};
+pair<int,int>p_array[3];
+p_array[0]={1,2};   //lets we want to match the the element of  first array with array of second 
+p_array[1]={2,3};
+p_array[2]={3,4};   
+for(int i=0;i<3;i++){
+    cout<<p_array[i].first<<" "<<p_array[i].second<<endl;
+}
+}
+/* how to take input from user
+pair<int,int>p;
+cin>>p.first;
+cout<<p.first;
+
+cin>>p.second;
+cout<<p.second<<endl;
+*/
