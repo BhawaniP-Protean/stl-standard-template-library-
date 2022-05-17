@@ -1,0 +1,73 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void printvec(vector<int>v){
+for(int i=0;i<v.size();i++){
+    cout<<v[i]<<" ";
+}
+cout<<endl;
+}
+
+int main(){
+
+cout<<"how many array you want"<<" ";
+int N;      \\ how many arrays you want 
+cin>>N;
+vector<int>v[N];
+for(int i=0;i<N;i++){
+        cout<<"enter the size of every array"<<endl;    \\ give array size 
+        int n;
+        cin>>n;
+        for(int j=0; j<n;j++){
+            int x;
+            cin>>x;             \\taking the values of the given array size
+            v[i].push_back(x);
+
+        }
+
+}
+for(int i=0;i<N;i++){
+    printvec(v[i]);
+
+}
+
+}
+
+
+
+
+\\output is here
+
+
+how many array you want 4
+enter the size of every array
+3   \\ here is size of the array
+
+12   \\values for array
+23
+45
+enter the size of every array
+5  \\ here is size of the array
+
+13   \\values for array
+45
+67
+89
+90
+enter the size of every array
+3   \\ here is size of the array
+
+1   \\values for array
+2
+3
+enter the size of every array
+2   \\ here is size of the array
+
+56  \\ values for array
+78
+
+// here are the values what we put
+12 23 45
+13 45 67 89 90
+1 2 3
+56 78
