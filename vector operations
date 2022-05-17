@@ -1,0 +1,56 @@
+
+
+// what if we are not assigning the value to vector. it wiill assign 0 value
+// just glance in this program 
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void printVec(vector<int>v){
+for(int i=0;i<v.size();i++){
+    cout<<v[i];
+}
+cout<<endl;
+}
+
+int main(){
+vector<int>v(10);  // here vector take the continuous 10 size in the memory
+     // we are not assigning the value, so it assign 0 to all the element
+     
+  printVec(v);  // print the values
+}
+  
+  
+  
+  // the outyput of this program is 
+  0000000000   
+  
+  
+  
+// another progam when i initialize the value  
+  
+  #include<bits/stdc++.h>
+using namespace std;
+
+void printVec(vector<int>v){
+for(int i=0;i<v.size();i++){
+    cout<<v[i];
+}
+cout<<endl;
+}
+
+int main(){
+vector<int>v(10);  // here vector take the continuous 10 size in the memory
+   v.push_back(7)  //here we  assign the value and 7 will go at the end of the vector
+     
+  printVec(v);  // print the values  
+}
+  
+  
+  
+  // the outyput of this program is    
+  00000000007  
+  
+  
+  //here we see the vectore is dynamic in nature. and take continuous memory
